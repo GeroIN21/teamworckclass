@@ -3,7 +3,7 @@
 @section('content')
 
         <head>
-            <link href="../../css/queue_form.css" rel="stylesheet" />
+            <link href={{ asset('css/queue_form.css') }} rel="stylesheet">
             <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
    
             <script>

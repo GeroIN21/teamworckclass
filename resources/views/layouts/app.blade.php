@@ -18,7 +18,7 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="../../css/queue_form.css" rel="stylesheet" />
+    <link href="{{ asset('css/queue_form.css') }}" rel="stylesheet">
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
