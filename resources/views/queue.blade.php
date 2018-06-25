@@ -4,9 +4,10 @@
 
         <head>
             <link href={{ asset('css/queue_form.css') }} rel="stylesheet">
-            <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-   
-            <script>
+    
+            {{ csrf_field() }}
+            <script type="text/javascript"> 
+            
                 $(function() {
                     $("div[id*='menu-']").hide(); 
                 })();                        
@@ -30,6 +31,13 @@
                         }
                     }
             </script>
+
+            <script type="text/javascript">
+                jQuery(function($){
+                   $("#libCardNumber").mask("99/999999");
+                });
+            </script>
+
         </head>
 
         <main class="py-4 bg-light">            
@@ -65,7 +73,7 @@
                             </div>   
                             <div class="col-md-6 mb-3">                                
                                 <label for="libCardNumber">Номер чит. билета</label>
-                                <input type="number" class="form-control" name="libCardNumber" placeholder="Читательский билет" value="" min="1" max="99999999"  minlength="1" maxlength="6" required>
+                                <input class="form-control" type="text" id="libCardNumber" name="libCardNumber" placeholder="XX/XXXXXX" minlength="9" maxlength="9" required>
                                 <div class="invalid-feedback">
                                     Valid Card Number is required.
                                 </div>

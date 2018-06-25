@@ -32,7 +32,7 @@ class QueueController extends Controller
 
         $data = array('firstName'       =>  $firstName,
                       'lastName'        =>  $lastName,
-                      'libCardNumber'   =>  $libCardNumber,
+                      'libCardNumber'   =>  preg_replace('/[^\d]+/', '', $libCardNumber), // Удаляем все лишние символы
                       'resDateBegin'    =>  $resDateBegin,
                       'resDateEnd'      =>  $resDateEnd,
                       'duration'        =>  $duration,
